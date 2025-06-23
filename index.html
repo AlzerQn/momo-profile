@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ももちゃんだよ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class ="container">
+        <h1>
+            ももこ’ｓ Ｐｒｏｆｉｌｅ Ｗｅｂ
+        </h1>
+        <img src="https://cdn.prod.website-files.com/603c87adb15be3cb0b3ed9b5/670cd926e551a1ce213e85d7_081-min.png" alt="プロフィール画像">
+        <p>名前：松下桃子</p>
+        <p>出身：山口県</p>
+        <p>年齢：２４歳</p>
+        <p>身長：１５４ｃｍ</p>
+        <p> ... </p>
+        <button id="moreButton">もっと見る</button>
+
+        <script>
+            document.getElementById("moreButton").addEventListener("click",function(){
+                document.body.classList.add("fade-out");
+                setTimeout(function() {
+                    window.location.href = "page2.html";
+                }, 500);
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ももちゃんのひみつ...</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class = "container">
+        <p>へへっ…(⋈◍＞◡＜◍)。✧♡
+            <div class="heart-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" id="heart" alt="ハート" width="80">
+                <p>♥ <span id="count">0</span></p>
+            </div>
+        </p>
+        <button id="backButton">もどる</button>
+
+        <script>
+            document.getElementById("backButton").addEventListener("click",function(){
+                window.location.href = "index.html";
+            });
+
+            let count = 0;
+            let intervalId = null;
+
+            const heart = document.getElementById("heart");
+            const countDisplay = document.getElementById("count");
+
+            heart.addEventListener("mouseover", function () {
+                if (intervalId === null) {
+                    intervalId = setInterval(() => {
+                        count++;
+                        countDisplay.textContent = count;
+                    }, 10); // ←ここでスピード調整（ミリ秒）
+                }
+            });
+
+            heart.addEventListener("mouseout", function () {
+                clearInterval(intervalId);
+                intervalId = null;
+            });
+
+        </script>
+    </div>
+</body>
