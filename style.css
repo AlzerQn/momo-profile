@@ -1,16 +1,18 @@
 body {
-    background-color: #e3b7e7;
-    font-family: "Arial",sans-serif;
+    background: linear-gradient(135deg, #f0e7ff, #fde8ec);
+    font-family: "Montserrat", "Arial", sans-serif;
     text-align: center;
     padding: 30px;
+    min-height: 100vh;
 }
 
 .container{
-    background-color: #ebd9d9;
+    background-color: #ffffffcc;
     border-radius: 40px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     margin: auto;
+    max-width: 500px;
 }
 
 img{
@@ -19,20 +21,35 @@ img{
     margin: 5px 0;
 }
 
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333333;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+p{
+    font-size: 1.1em;
+    margin: 6px 0;
+}
+
 button{
     background-color: #22c6eb;
     color:#ffffff;
     border: none;
-    padding: 10px 10px;
-    font-size: 15px;
-    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
     cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    margin-top: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover{
     background-color: #005fa3;
+    transform: scale(1.05);
 }
 
 .fade-out{
@@ -55,5 +72,5 @@ button:hover{
 
 #count{
     font-size: 24px;
-    color:#e91e63
+    color:#e91e63;
 }
